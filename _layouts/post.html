@@ -1,0 +1,34 @@
+---
+layout: default
+---
+<div class="post-head">
+  <header class="container">
+    <div class="post-meta">
+      {% if page.category != "documents" %}
+        {% if page.category.size > 0 %}
+        <i class="icon-book"></i>
+        <span class="post-meta-ct" onclick="sidebarSearch('{{ page.category }}'); return false;">{{ page.category }}</span>
+        {% endif %}
+        {% if page.tags.size > 0 %}
+        <i class="icon-tags"></i>
+        {% for tag in page.tags %}
+        <span class="post-meta-ct" onclick="sidebarSearch('{{ tag }}'); return false;">{{ tag }}</span>
+        {% endfor %}
+        {% endif %}
+      {% endif %}
+    </div>
+
+    <div class="post-title">{{ page.title }}</div>
+    <div class="post-date">
+      {{ page.date | date:"%Y-%m-%d" }}
+    </div>
+  </header>
+  {% if page.cover %}
+  <div class="post-head-cover-filter"></div>
+  <div class="post-head-cover" style="background: url('{{ page.cover }}') center no-repeat; background-size: cover;"></div>
+  {% endif %}
+</div>
+<article class="post container">
+  <h1 class="post-title">{{ page.title }}</h1>
+  {{ content }}
+</article>

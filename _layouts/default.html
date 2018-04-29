@@ -1,0 +1,35 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  {% include head.html %}
+  <body>
+    {% include sidebar.html %}
+
+    <main id="main" class="with-sidebar">
+      {{ content }}
+
+      <button id="menu">
+        <i class="icon-menu"></i>
+      </button>
+
+      {% if site.github.username and site.github.repository_name %}
+      <a id="github-edit" class="only-admin" href="https://github.com/{{site.github.username}}/{{site.github.repository_name}}/edit/master/{{page.path}}" target="_blank">
+        <i class="icon-edit"></i>
+      </a>
+      <a id="github-new" class="only-admin" href="https://github.com/{{site.github.username}}/{{site.github.repository_name}}/new/master/" target="_blank">
+        <i class="icon-plus-square"></i>
+      </a>
+      <a id="archive-org-save" class="only-admin" href="https://web.archive.org/save/" target="_blank">
+        <i class="icon-bank"></i>
+      </a>
+      {% endif %}
+    </main>
+
+    <div id="h2o" class="with-sidebar">
+      <div id="h2o-holder"></div>
+    </div>
+
+  </body>
+</html>

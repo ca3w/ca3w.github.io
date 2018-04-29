@@ -1,0 +1,21 @@
+# Site settings
+title: "认证机构管理系统"
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://ca3w.com" # the base hostname & protocol for your site'
+permalink: "/:categories/:title.:output_ext"
+
+github:
+  username: "ca3w"
+  repository_name: "ca3w.github.io"
+
+
+baidu_tongji: "0237eff23016a9f4de3848c27cc7e067" # forever !!! https://tongji.baidu.com
+google_analytics: "UA-118356767-1" # forever !!! https://analytics.google.com
+
+
+# Build settings
+markdown: kramdown
+sass:
+  style: compressed
+plugins:
+  - jekyll-sitemap
