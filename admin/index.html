@@ -1,0 +1,193 @@
+---
+layout: null
+---
+<html lang="zh-Hans">
+<head>
+
+    <meta charset="utf-8" />
+
+    <meta name="robots" content="noindex" />
+
+    <title>CA3W 管理团队 登入</title>
+
+    <link rel="icon" href="/logo.png" />
+    <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+
+    <link rel="stylesheet" href="{{ '/assets/ca3w-20180428.css' | prepend: site.baseurl }}" />
+    <script src="{{ '/assets/ca3w-20180428.js' | prepend: site.baseurl }}"></script>
+
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}" />
+
+    {% if site.baidu_tongji %}
+    <script>
+    var adminKey = adminKey || $.cookie("admin-key");
+    if (! adminLoginAuth(adminKey)) {
+      var meta = document.getElementsByTagName('meta');
+      if (meta['referrer'] !== undefined) {
+        meta['referrer'].setAttribute('content', 'origin');
+      }
+
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+
+        var hmSrc = "h"+"t"+"t"+"p"+"s"+":"+"/"+"/"+"h"+"m"+"."+"b"+"a"+"i"+"d"+"u"+"."+"c"+"o"+"m"+"/"+"h"+"m"+"."+"j"+"s"+"?"+"{{ site.baidu_tongji }}";
+        hm.src = hmSrc.substring(hmSrc.indexOf("h"+"m"+"."+"b"+"a"+"i"+"d"+"u") - 8);
+
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    }
+    </script>
+    {% endif %}
+
+    {% if site.google_analytics %}
+    <script>
+    var adminKey = adminKey || $.cookie("admin-key");
+    if (! adminLoginAuth(adminKey)) {
+      var meta = document.getElementsByTagName('meta');
+      if (meta['referrer'] !== undefined) {
+        meta['referrer'].setAttribute('content', 'origin');
+      }
+
+      (function() {
+        var gtm = document.createElement("script");
+
+        var gtmAsync = document.createAttribute('async');
+        gtm.setAttributeNode(gtmAsync);
+
+        var gtmSrc = "h"+"t"+"t"+"p"+"s"+":"+"/"+"/"+"w"+"w"+"w"+"."+"g"+"o"+"o"+"g"+"l"+"e"+"t"+"a"+"g"+"m"+"a"+"n"+"a"+"g"+"e"+"r"+"."+"c"+"o"+"m"+"/"+"g"+"t"+"a"+"g"+"/"+"j"+"s"+"?"+"i"+"d"+"="+"{{ site.google_analytics }}";
+        gtm.src = gtmSrc.substring(gtmSrc.indexOf("w"+"w"+"w"+"."+"g"+"o"+"o"+"g"+"l"+"e") - 8);
+
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(gtm, s);
+      })();
+
+      var GA_TRACKING_ID = '{{ site.google_analytics }}';
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', GA_TRACKING_ID);
+    }
+    </script>
+    {% endif %}
+
+    <style>
+        body {
+            background-color: #fff;
+            background-image: none;
+        }
+
+        #app > form {
+            margin: 180px auto auto;
+            width: 523px;
+            display: block
+        }
+
+        #password-wrap {
+            padding: 10px;
+            -webkit-transition: top .5s ease;
+            -moz-transition: top .5s ease;
+            -ms-transition: top .5s ease;
+            transition: top .5s ease;
+            background: #fff;
+            border: 1px solid rgba(0, 0, 0, .07);
+            margin-bottom: 10px;
+            margin-top: -1px;
+            height: 62px;
+            position: relative;
+        }
+
+        #password-argot {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 190px;
+            background: #fff;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            outline: 0;
+            line-height: 22px;
+            padding: 10px 0 10px 10px;
+            color: inherit;
+            font-size: 22px;
+            font-weight: bold;
+            white-space: nowrap;
+            margin: 0;
+        }
+
+        #ca3w-admin-password {
+            position: absolute;
+            top: 10px;
+            left: 220px;
+            width: 290px;
+            background: #fff;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            outline: 0;
+            line-height: 22px;
+            padding: 10px 10px 10px 0;
+            font-size: 22px;
+            font-weight: bold;
+            white-space: nowrap;
+            margin: 0;
+            color: #1494FB;
+            height: 42px;
+            border-top: none;
+            border-right: none;
+            border-bottom: 1px solid #1494FB;
+            border-left: none;
+        }
+
+        #submit-wrap {
+            padding: 10px;
+            -webkit-transition: top .5s ease;
+            -moz-transition: top .5s ease;
+            -ms-transition: top .5s ease;
+            transition: top .5s ease;
+            background: #fff;
+            border: 1px solid rgba(0, 0, 0, .07);
+            margin-bottom: 10px;
+            margin-top: -1px
+        }
+
+        #submit {
+            width: 100%;
+            border: 1px solid transparent;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            outline: 0;
+            line-height: 22px;
+            padding: 10px;
+            font-size: 100%;
+            margin: 0;
+            background: #1494FB;
+            color: #fff;
+            cursor: pointer
+        }
+
+        #submit:hover {
+            background: #0366d6;
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="app">
+    <form action="/">
+        <div id="password-wrap">
+            <span id="password-argot">大争之世 争于实力</span>
+            <input id="ca3w-admin-password" type="text" name="password" autocomplete="off">
+        </div>
+        <div id="submit-wrap">
+            <input id="submit" type="submit" value="CA3W 管理团队 登入" onclick="return adminLogin()">
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

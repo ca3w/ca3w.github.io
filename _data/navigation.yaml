@@ -1,0 +1,48 @@
+- text: 在云上
+  subitems:
+    - text: 认证机构的云
+      href: /www/11-ca3w.html
+    - text: 看图（速览）
+      href: /www/12-screenshots.html
+- text: 主要功能
+  subitems:
+    - text: 申请
+      href: /www/21-apply.html
+    - text: 计划
+      href: /www/22-plan.html
+    - text: 审核（检查）
+      href: /www/23-audit.html
+    - text: 检测
+      href: /www/24-testing.html
+    - text: 评定
+      href: /www/25-verdict.html
+    - text: 证书
+      href: /www/26-certificate.html
+    - text: 监督
+      href: /www/27-supervision.html
+    - text: 再认证（复评）
+      href: /www/28-re-evaluation.html
+    - text: 变更
+      href: /www/29-change.html
+- text: 自定 CA3W
+  subitems:
+    - text: 配置
+      href: /www/31-conf.html
+    - text: 多语言
+      href: /www/32-lang.html
+- text: 获得新功能和改进
+  subitems:
+    - text: 使用者代表
+      href: /www/41-user-representative.html
+    - text: 反馈平台
+      href: /www/42-improvements.html
+- text: 销售及维护
+  subitems:
+    - text: 试用（免费）
+      href: /www/51-try.html
+    - text: 价格（透明）
+      href: /www/52-pricing.html
+    - text: 购买（欢迎）
+      href: /www/53-buy.html
+    - text: 客户列表
+      href: /www/54-client-list.html
