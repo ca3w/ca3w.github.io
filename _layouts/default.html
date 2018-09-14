@@ -14,17 +14,19 @@ layout: compress
         <i class="icon-menu"></i>
       </button>
 
-      {% if site.github.username and site.github.repository_name %}
-      <a id="github-edit" class="only-admin" href="https://github.com/{{site.github.username}}/{{site.github.repository_name}}/edit/master/{{page.path}}" target="_blank">
+      {% if site.editlink %}
+      <a id="edit-link" class="only-admin" href="{{site.editlink}}{{page.path}}" target="_blank">
         <i class="icon-edit"></i>
       </a>
-      <a id="github-new" class="only-admin" href="https://github.com/{{site.github.username}}/{{site.github.repository_name}}/new/master/" target="_blank">
+      {% endif %}
+      {% if site.newlink %}
+      <a id="new-link" class="only-admin" href="{{site.newlink}}" target="_blank">
         <i class="icon-plus-square"></i>
       </a>
+      {% endif %}
       <a id="archive-org-save" class="only-admin" href="https://web.archive.org/save/" target="_blank">
         <i class="icon-bank"></i>
       </a>
-      {% endif %}
     </main>
 
     <div id="h2o" class="with-sidebar">

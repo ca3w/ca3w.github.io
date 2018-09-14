@@ -49,14 +49,14 @@
       </div>
       <nav id="search-result">
         {% for p in site.pages %}
-        <a class="search-result-link" data-category="{{ p.category }}" data-tags="{{ p.tags | join: ' ' }}" href="{{ p.url }}">
+        <a class="search-result-link" data-category="{{ p.category }}" data-tags="{{ p.tags | join: ' ' }}" data-keywords="{{ p.keywords | join: ' ' }}" href="{{ p.url }}">
           <i class="fa fa-chevron-right"></i>
           {{ p.title }}
         </a>
         {% endfor %}
 
         {% for p in site.posts %}
-        <a class="search-result-link" data-category="{{ p.category }}" data-tags="{{ p.tags | join: ' ' }}" href="{{ p.url }}">
+        <a class="search-result-link" data-category="{{ p.category }}" data-tags="{{ p.tags | join: ' ' }}" data-keywords="{{ p.keywords | join: ' ' }}" href="{{ p.url }}">
           <i class="fa fa-chevron-right"></i>
           {{ p.title }}
         </a>

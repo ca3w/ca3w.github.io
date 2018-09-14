@@ -4,9 +4,9 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://ca3w.com" # the base hostname & protocol for your site'
 permalink: "/:categories/:title.:output_ext"
 
-github:
-  username: "ca3w"
-  repository_name: "ca3w.github.io"
+
+editlink: "https://github.com/ca3w/ca3w.github.io/edit/master/"
+newlink: "https://github.com/ca3w/ca3w.github.io/new/master/"
 
 
 baidu_tongji: "0237eff23016a9f4de3848c27cc7e067" # forever !!! https://tongji.baidu.com
