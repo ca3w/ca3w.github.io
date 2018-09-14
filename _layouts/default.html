@@ -4,7 +4,7 @@ layout: compress
 <!DOCTYPE html>
 <html lang="zh-Hans">
   {% include head.html %}
-  <body>
+  <body{% if site.docsmode %} class="docs"{% endif %}>
     {% include sidebar.html %}
 
     <main id="main" class="with-sidebar">
