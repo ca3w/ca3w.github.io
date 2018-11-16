@@ -1,8 +1,8 @@
 # 认证机构管理系统
 
-以科学设计、合理改进为原则打造产品，埋头苦干，砥砺前行，打造最优雅的认证机构管理系统 - CA3W ，
+以科学设计、合理改进为原则打造产品，埋头苦干，砥砺前行，打造简洁优雅的认证机构信息管理软件 - CA3W ，
 
-以开放、透明、自信为原则销售及维护，锐意进取，开拓创新，助力中国认证机构信息化程度领先于世界。
+以开放、透明、自信为原则销售及维护，锐意进取，开拓创新，助力中国认证机构信息管理软件行业领先于世界。
 
 :sunglasses::sunglasses::sunglasses::sunglasses::sunglasses::sunglasses::sunglasses::sunglasses::sunglasses::sunglasses::sunglasses::sunglasses:  :sunglasses::sunglasses::sunglasses::sunglasses::sunglasses::sunglasses::sunglasses::sunglasses::sunglasses::sunglasses::sunglasses::sunglasses:<br>
 :sunglasses::sunglasses::sunglasses::sunglasses::sunglasses::sunglasses::sunglasses::sunglasses::sunglasses::sunglasses::sunglasses::sunglasses:  :sunglasses::sunglasses::sunglasses::sunglasses::sunglasses::sunglasses::sunglasses::sunglasses::sunglasses::sunglasses::sunglasses::sunglasses:<br>
