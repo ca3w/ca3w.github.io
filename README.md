@@ -1,6 +1,6 @@
 # 认证机构管理系统 - CA3W - 认证机构ERP系统上云
 
-https://ca3w.github.io/
+http://ca3w.github.io/
 
 认证系统出我辈，冲天豪气入码内。山河永固符文中，品诗学武境界美。
 
